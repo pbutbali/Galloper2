@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyundai Galloper II</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(to right, #000000, #1f1f1f);
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            .specs {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hyundai Galloper II<br>2.5 TD 2002</h1>
+</header>
+
+<section>
+    <h2>О машине</h2>
+    <p>
+        Дизельный внедорожник на базе Mitsubishi Pajero.
+        Рамная конструкция, полный привод, надёжная классическая механика.
+    </p>
+</section>
+
+<section>
+    <h2>Характеристики</h2>
+    <div class="specs">
+        <div class="card">Двигатель: 2.5 турбодизель</div>
+        <div class="card">Коробка: АКПП</div>
+        <div class="card">Привод: Полный</div>
+        <div class="card">Год выпуска: 2002</div>
+    </div>
+</section>
+
+<section>
+    <h2>Обслуживание</h2>
+    <ul>
+        <li>Замена патрубков охлаждения</li>
+        <li>Обслуживание АКПП</li>
+        <li>Промывка радиатора</li>
+    </ul>
+</section>
+
+<footer>
+    Контакт: your@email.com
+</footer>
+
+</body>
+</html>
