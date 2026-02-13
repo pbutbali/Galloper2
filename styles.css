@@ -141,3 +141,40 @@ body{
 
 
 .title__vin{margin-top:10px;color:rgba(242,243,247,.62);font-weight:600;letter-spacing:.10em}
+
+
+/* Dropdown sections */
+.drop{margin:0}
+.drop__sum{
+  list-style:none;
+  cursor:pointer;
+  user-select:none;
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+  padding: 6px 2px;
+}
+.drop__sum::-webkit-details-marker{display:none}
+.drop__title{
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.drop__meta{
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+  text-align:right;
+}
+.drop__sum::after{
+  content:"▾";
+  color: rgba(242,243,247,.60);
+  font-size: 16px;
+  margin-left:auto;
+  transform: translateY(-1px);
+  transition: transform .15s ease;
+}
+.drop[open] .drop__sum::after{transform: rotate(180deg) translateY(1px);}
+.drop__content{margin-top: 12px;}
