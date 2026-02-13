@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1a23"/>
+      <stop offset="1" stop-color="#07090c"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="rgba(255,255,255,.02)"/>
+      <stop offset=".5" stop-color="rgba(255,255,255,.08)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,.02)"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- moon -->
+  <circle cx="1260" cy="170" r="62" fill="rgba(255,255,255,.12)"/>
+  <circle cx="1280" cy="160" r="54" fill="rgba(255,255,255,.10)"/>
+  <circle cx="1300" cy="150" r="46" fill="rgba(255,255,255,.08)"/>
+
+  <!-- far trees -->
+  <g opacity=".55">
+    <path d="M-50 650 C 200 520, 420 560, 700 520 C 980 480, 1200 560, 1650 500 L 1650 900 L -50 900 Z" fill="#0b1116"/>
+  </g>
+
+  <!-- mist bands -->
+  <g filter="url(#soft)" opacity=".65">
+    <rect x="0" y="520" width="1600" height="80" fill="url(#mist)"/>
+    <rect x="0" y="600" width="1600" height="70" fill="url(#mist)" opacity=".7"/>
+  </g>
+
+  <!-- mid trees (cartoon) -->
+  <g opacity=".85">
+    <g transform="translate(120,430)">
+      <path d="M90 0 C 30 40, 0 110, 0 180 C 0 250, 40 290, 90 300 C 140 290, 180 250, 180 180 C 180 110, 150 40, 90 0 Z" fill="#0f2b20"/>
+      <rect x="78" y="230" width="24" height="70" rx="8" fill="#3a2a1c"/>
+    </g>
+    <g transform="translate(330,410) scale(1.15)">
+      <path d="M90 0 C 30 40, 0 110, 0 180 C 0 250, 40 290, 90 300 C 140 290, 180 250, 180 180 C 180 110, 150 40, 90 0 Z" fill="#10301f"/>
+      <rect x="78" y="230" width="24" height="70" rx="8" fill="#3a2a1c"/>
+    </g>
+    <g transform="translate(1320,420) scale(1.05)">
+      <path d="M90 0 C 30 40, 0 110, 0 180 C 0 250, 40 290, 90 300 C 140 290, 180 250, 180 180 C 180 110, 150 40, 90 0 Z" fill="#0f2a1e"/>
+      <rect x="78" y="230" width="24" height="70" rx="8" fill="#3a2a1c"/>
+    </g>
+  </g>
+
+  <!-- ground -->
+  <path d="M0 690 C 260 640, 420 710, 680 680 C 980 640, 1180 720, 1600 660 L 1600 900 L 0 900 Z" fill="#06080a"/>
+
+  <!-- cartoon car silhouette -->
+  <g transform="translate(510,650)">
+    <path d="M60 70 C 70 35, 98 12, 140 12 L 380 12 C 420 12, 450 34, 470 62 L 520 62 C 548 62, 570 80, 570 104 L 570 144 C 570 160, 558 172, 542 172 L 536 172 C 528 140, 502 118, 470 118 C 438 118, 412 140, 404 172 L 216 172 C 208 140, 182 118, 150 118 C 118 118, 92 140, 84 172 L 70 172 C 52 172, 38 158, 38 140 L 38 96 C 38 84, 46 74, 60 70 Z"
+          fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.18)" stroke-width="2" />
+    <rect x="162" y="26" width="130" height="54" rx="12" fill="rgba(255,255,255,.08)"/>
+    <rect x="302" y="26" width="120" height="54" rx="12" fill="rgba(255,255,255,.06)"/>
+    <circle cx="150" cy="172" r="34" fill="rgba(255,255,255,.08)" stroke="rgba(255,176,83,.35)" stroke-width="3"/>
+    <circle cx="470" cy="172" r="34" fill="rgba(255,255,255,.08)" stroke="rgba(255,176,83,.35)" stroke-width="3"/>
+    <circle cx="150" cy="172" r="16" fill="rgba(0,0,0,.45)"/>
+    <circle cx="470" cy="172" r="16" fill="rgba(0,0,0,.45)"/>
+    <path d="M58 90 L 120 90" stroke="rgba(255,176,83,.55)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M480 90 L 548 90" stroke="rgba(255,176,83,.35)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- subtle vignette -->
+  <rect width="1600" height="900" fill="rgba(0,0,0,.35)"/>
+</svg>

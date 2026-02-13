@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1116"/>
+      <stop offset="1" stop-color="#070a0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <g transform="translate(220,150)">
+    <path d="M260 360 C 260 250, 340 180, 450 180 C 560 180, 640 250, 640 360 C 640 520, 510 620, 450 620 C 390 620, 260 520, 260 360 Z"
+          fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.18)" stroke-width="4"/>
+    <path d="M640 340 C 740 340, 820 380, 860 440 C 800 450, 740 470, 680 510 C 690 440, 680 390, 640 340 Z"
+          fill="rgba(255,176,83,.22)" stroke="rgba(255,176,83,.45)" stroke-width="4"/>
+    <circle cx="510" cy="330" r="16" fill="rgba(0,0,0,.55)"/>
+    <circle cx="510" cy="330" r="6" fill="rgba(255,255,255,.65)"/>
+    <path d="M420 420 C 470 390, 540 390, 590 420" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M360 560 C 420 520, 480 520, 540 560" fill="none" stroke="rgba(122,197,123,.35)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M580 560 C 640 520, 700 520, 760 560" fill="none" stroke="rgba(122,197,123,.35)" stroke-width="10" stroke-linecap="round"/>
+    <g transform="translate(160,250)">
+      <rect x="0" y="220" width="220" height="150" rx="18" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)" stroke-width="4"/>
+      <path d="M12 240 L 110 310 L 208 240" fill="none" stroke="rgba(255,176,83,.45)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galloper2 — Лесной Журнал</title>
+  <meta name="description" content="Одностраничник автомобиля: технические данные и история обслуживания. Мужской лесной стиль с мультяшной ноткой." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" id="top">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="На главную">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">GALLOPER2</span>
+      </a>
+      <nav class="nav" aria-label="Навигация">
+        <a href="#specs">Техданные</a>
+        <a href="#service">Обслуживание</a>
+        <a href="#notes">Заметки</a>
+        <a class="nav__cta" href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/hero-forest.svg" alt="" />
+      </div>
+
+      <div class="wrap hero__content">
+        <div class="kicker">
+          <span class="kicker__badge">лесной стиль</span>
+          <span class="kicker__dot" aria-hidden="true"></span>
+          <span class="kicker__text">техническая карточка · журнал обслуживания</span>
+        </div>
+
+        <h1 class="h1">
+          Galloper2 —<br/>
+          железный зверь<br/>
+          из сказочного леса
+        </h1>
+
+        <p class="lead">
+          Одностраничник без лишнего: спецификации, узлы, расходники и история работ.
+          Стиль — мужской, но с мягкой мультяшной графикой, как если бы лесник вел журнал экспедиционного авто.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn" href="#specs">Открыть техданные</a>
+          <a class="btn btn--ghost" href="#service">История обслуживания</a>
+        </div>
+
+        <div class="hero__quick">
+          <div class="chip"><span class="chip__k">Двигатель</span><b class="chip__v">2.5 дизель</b></div>
+          <div class="chip"><span class="chip__k">АКПП</span><b class="chip__v">автомат</b></div>
+          <div class="chip"><span class="chip__k">Привод</span><b class="chip__v">4WD</b></div>
+          <div class="chip"><span class="chip__k">Город</span><b class="chip__v">Москва</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECS -->
+    <section class="wrap section" id="specs">
+      <div class="section__head">
+        <div>
+          <div class="eyebrow">Технические данные</div>
+          <h2 class="h2">Спецификация автомобиля</h2>
+          <p class="muted">Заполняется блоками: быстро, удобно, читается как паспорт.</p>
+        </div>
+        <div class="section__badge">
+          <span class="badge">🪓 лесник</span>
+          <span class="badge">🌲 лес</span>
+          <span class="badge">🛠️ сервис</span>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block__media">
+          <img src="assets/specs-map.svg" alt="Иллюстрация: карта и компас" />
+        </div>
+        <div class="block__body">
+          <h3 class="h3">Основное</h3>
+          <div class="grid">
+            <div class="kv"><span>Марка / модель</span><b>Hyundai Galloper</b></div>
+            <div class="kv"><span>Год</span><b>2000–2002 (уточнить)</b></div>
+            <div class="kv"><span>Двигатель</span><b>2.5 дизель (D4BH — если так)</b></div>
+            <div class="kv"><span>Наддув</span><b>Intercooler (если есть)</b></div>
+            <div class="kv"><span>Коробка</span><b>АКПП</b></div>
+            <div class="kv"><span>Привод</span><b>4WD</b></div>
+            <div class="kv"><span>Кузов</span><b>внедорожник</b></div>
+            <div class="kv"><span>Цвет</span><b>—</b></div>
+          </div>
+          <p class="hint">Текст везде можно менять прямо в <span class="mono">index.html</span> (поиск по словам).</p>
+        </div>
+      </div>
+
+      <div class="block block--alt">
+        <div class="block__media">
+          <img src="assets/specs-engine.svg" alt="Иллюстрация: мультяшный мотор" />
+        </div>
+        <div class="block__body">
+          <h3 class="h3">Узлы и расходники</h3>
+          <div class="grid">
+            <div class="kv"><span>Масло двигателя</span><b>—</b></div>
+            <div class="kv"><span>Фильтр масляный</span><b>—</b></div>
+            <div class="kv"><span>Фильтр топливный</span><b>—</b></div>
+            <div class="kv"><span>Фильтр воздушный</span><b>—</b></div>
+            <div class="kv"><span>ATF (АКПП)</span><b>—</b></div>
+            <div class="kv"><span>Раздатка/мосты</span><b>—</b></div>
+            <div class="kv"><span>ОЖ</span><b>—</b></div>
+            <div class="kv"><span>Ремни</span><b>—</b></div>
+          </div>
+          <p class="hint">Если захочешь, добавлю “кнопку печати” именно блока техданных — чтобы отдавать листом механику.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="wrap section" id="service">
+      <div class="section__head">
+        <div>
+          <div class="eyebrow">История обслуживания</div>
+          <h2 class="h2">Журнал работ</h2>
+          <p class="muted">Короткие записи: что сделано, когда, на каком пробеге, с какими примечаниями.</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block__media">
+          <img src="assets/service-scroll.svg" alt="Иллюстрация: свиток журнала" />
+        </div>
+        <div class="block__body">
+          <h3 class="h3">Лента обслуживания</h3>
+
+          <div class="timeline" role="list">
+            <div class="tl" role="listitem">
+              <div class="tl__dot" aria-hidden="true"></div>
+              <div class="tl__content">
+                <div class="tl__top">
+                  <b>Масло + фильтры (база)</b>
+                  <span class="tl__meta">13.02.2026 · пробег: —</span>
+                </div>
+                <div class="tl__text">Точка отсчёта: убрать неизвестность, поставить ритм обслуживания.</div>
+              </div>
+            </div>
+
+            <div class="tl" role="listitem">
+              <div class="tl__dot" aria-hidden="true"></div>
+              <div class="tl__content">
+                <div class="tl__top">
+                  <b>Диагностика АКПП</b>
+                  <span class="tl__meta">— · пробег: —</span>
+                </div>
+                <div class="tl__text">Симптомы/ошибки/план работ (добавить итоги диагностики).</div>
+              </div>
+            </div>
+
+            <div class="tl" role="listitem">
+              <div class="tl__dot" aria-hidden="true"></div>
+              <div class="tl__content">
+                <div class="tl__top">
+                  <b>Турбина / интеркулер</b>
+                  <span class="tl__meta">— · пробег: —</span>
+                </div>
+                <div class="tl__text">Осмотр патрубков, люфт, утечки, интеркулер (фиксируем факты).</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools">
+            <button class="btn btn--small" id="copyLog" type="button">Скопировать журнал</button>
+            <a class="btn btn--small btn--ghost" href="#contact">Добавить контакт</a>
+          </div>
+
+          <p class="hint">Кнопка “Скопировать” берёт текст ленты и складывает в буфер.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTES -->
+    <section class="wrap section" id="notes">
+      <div class="section__head">
+        <div>
+          <div class="eyebrow">Заметки</div>
+          <h2 class="h2">Что важно помнить</h2>
+          <p class="muted">Короткие маркеры: наблюдения, симптомы, что проверять, что планируется.</p>
+        </div>
+      </div>
+
+      <div class="block block--alt">
+        <div class="block__media">
+          <img src="assets/notes-camp.svg" alt="Иллюстрация: костёр и палатка" />
+        </div>
+        <div class="block__body">
+          <h3 class="h3">Список заметок</h3>
+          <ul class="list">
+            <li>АКПП: пинки на 2→3 (уточнить условия: холодная/горячая).</li>
+            <li>Двигатель: расход масла ~300 мл от замены до замены (если актуально).</li>
+            <li>План: сервис/диагностика слоями, без “всё сразу”.</li>
+            <li>Следующее ТО: дата/пробег — поставить напоминание.</li>
+          </ul>
+
+          <div class="mini">
+            <div class="mini__title">Лесная логика</div>
+            <div class="mini__text">Сначала факты, потом решения. Сначала база, потом улучшения.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="wrap section" id="contact">
+      <div class="section__head">
+        <div>
+          <div class="eyebrow">Контакты</div>
+          <h2 class="h2">Связь</h2>
+          <p class="muted">Опционально. Если страница личная — оставь пусто. Если “для продажи” — заполни.</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block__media">
+          <img src="assets/contact-raven.svg" alt="Иллюстрация: мультяшный ворон-почтальон" />
+        </div>
+        <div class="block__body">
+          <h3 class="h3">Как связаться</h3>
+          <div class="grid">
+            <div class="kv"><span>Город</span><b>Москва</b></div>
+            <div class="kv"><span>Telegram</span><b>@username</b></div>
+            <div class="kv"><span>Телефон</span><b>+7 …</b></div>
+            <div class="kv"><span>Email</span><b>you@example.com</b></div>
+          </div>
+
+          <div class="tools">
+            <a class="btn btn--small" href="#top">Наверх</a>
+            <button class="btn btn--small btn--ghost" id="print" type="button">Печать</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__line"></div>
+        <div class="footer__grid">
+          <div class="muted">© <span id="year"></span> · Galloper2 · One‑page</div>
+          <div class="muted footer__right">Made minimal. Kept wood &amp; steel.</div>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
